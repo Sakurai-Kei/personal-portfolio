@@ -1,6 +1,6 @@
 export default function Header() {
   return (
-    <nav className="bg-white shadow dark:bg-gradient-to-r dark:from-gray-900 dark:to-blue-800">
+    <nav className="bg-white shadow dark:bg-gradient-to-r dark:from-gray-900 dark:to-pink-800">
       <div className="container px-6 py-4 mx-auto lg:flex lg:justify-between lg:items-center">
         <div className="lg:flex lg:items-center">
           <div className="flex items-center justify-between">

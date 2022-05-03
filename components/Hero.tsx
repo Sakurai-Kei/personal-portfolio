@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="w-full dark:bg-gradient-to-r dark:from-gray-900 dark:to-blue-900">
+    <section className="w-full dark:bg-gradient-to-r dark:from-gray-900 dark:to-pink-900">
       <div className="container px-6 py-8 mx-auto">
         <div className="items-center lg:flex">
           <div className="lg:w-1/2">
@@ -18,9 +18,9 @@ export default function Hero() {
               </a>{" "}
               , self-taught developer. In my past projects, I have the
               opportunity to implement my solutions using vanilla javascript and
-              using libraries/frameworks such as React, MERN stack and
-              NextJs.Furthermore, I have used services such as Google Firebase
-              and MongoDB in my projects.
+              using libraries/frameworks such as React, MERN stack and NextJs.
+              Furthermore, I have used services such as Google Firebase and
+              MongoDB in my projects.
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
