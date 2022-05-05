@@ -114,10 +114,12 @@ export default function Features() {
 
           <div className="hidden lg:flex lg:items-center lg:w-1/2 lg:justify-center">
             <Image
-              layout="intrinsic"
+              height={448}
+              width={448}
               className="w-[28rem] h-[28rem] object-cover xl:w-[34rem] xl:h-[34rem] rounded-full"
               src={featuresPicture}
               alt="Programming"
+              priority={true}
             />
           </div>
         </div>
