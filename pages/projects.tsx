@@ -1,13 +1,9 @@
-import Features from "../components/Features";
-import Hero from "../components/Hero";
 import PastProjects from "../components/PastProjects";
 import { blogAPIProject, chatAppProject } from "../lib/projectObjects";
 
-export default function Home<NextPage>() {
+export default function Projects<NextPage>() {
   return (
-    <div className="flex flex-col items-center justify-center dark:bg-gray-800 dark:text-white">
-      <Hero />
-      <Features />
+    <div className="w-full flex flex-col bg-gradient-to-r from-slate-900 to-pink-900 text-white items-center">
       <PastProjects
         imgsrc={blogAPIProject.imgsrc}
         alt={blogAPIProject.alt}

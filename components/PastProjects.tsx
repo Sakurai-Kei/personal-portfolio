@@ -1,13 +1,5 @@
-import Image, { StaticImageData } from "next/image";
-
-interface PastProjectsComponent {
-  imgsrc: StaticImageData;
-  alt: string;
-  title: string;
-  description: string;
-  repo: string;
-  liveDemo: string;
-}
+import Image from "next/image";
+import { PastProjectsComponent } from "../interfaces/PastProjectComponent";
 
 export default function PastProjects(props: PastProjectsComponent) {
   const { imgsrc, alt, title, description, repo, liveDemo } = props;

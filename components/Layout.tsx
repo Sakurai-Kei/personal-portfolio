@@ -1,16 +1,13 @@
 import Header from "./Header";
 import Footer from "./Footer";
-
-interface LayoutComponent {
-  children: React.ReactNode;
-}
+import { LayoutComponent } from "../interfaces/LayoutComponent";
 
 export default function Layout(props: LayoutComponent) {
   const { children } = props;
   return (
-    <div className="dark bg-gray-900 w-full">
+    <div className="flex flex-col dark bg-gray-900 w-full min-h-screen">
       <Header />
-      <div>{children}</div>
+      <div className="flex-grow">{children}</div>
       <Footer />
     </div>
   );

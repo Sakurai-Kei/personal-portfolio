@@ -16,7 +16,7 @@ export default function Footer() {
 
           <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
             <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-200 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40">
-              <a className="flex gap-2" href="https://github.com/Sakurai-Kei">
+              <a className="flex gap-2" href="#">
                 <svg
                   width="24"
                   height="24"
