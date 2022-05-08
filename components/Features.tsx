@@ -3,7 +3,7 @@ import featuresPicture from "../public/featuresPicture.jpg";
 
 export default function Features() {
   return (
-    <section className="w-full bg-white dark:bg-gradient-to-b dark:from-gray-900 dark:to-pink-900">
+    <section className="w-full bg-white dark:bg-gradient-to-b dark:from-slate-900 dark:via-slate-900 dark:to-pink-900">
       <div className="container px-6 py-10 mx-auto">
         <div className="lg:flex lg:items-center">
           <div className="w-full space-y-12 lg:w-1/2 ">

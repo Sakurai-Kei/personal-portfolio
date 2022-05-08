@@ -9,6 +9,7 @@ export default function Home<NextPage>() {
       <Hero />
       <Features />
       <PastProjects
+        id={blogAPIProject.id}
         imgsrc={blogAPIProject.imgsrc}
         alt={blogAPIProject.alt}
         title={blogAPIProject.title}
@@ -17,6 +18,7 @@ export default function Home<NextPage>() {
         liveDemo={blogAPIProject.liveDemo}
       />
       <PastProjects
+        id={chatAppProject.id}
         imgsrc={chatAppProject.imgsrc}
         alt={chatAppProject.alt}
         title={chatAppProject.title}

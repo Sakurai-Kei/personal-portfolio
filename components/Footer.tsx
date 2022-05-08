@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="dark:bg-gradient-to-t dark:from-gray-900 dark:to-pink-900">
+    <footer className="dark:bg-gradient-to-t dark:from-slate-900 dark:to-pink-900">
       <div className="container px-6 py-8 mx-auto">
         <div className="text-center">
           <a

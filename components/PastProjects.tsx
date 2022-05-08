@@ -1,11 +1,21 @@
 import Image from "next/image";
+import Link from "next/link";
 import { PastProjectsComponent } from "../interfaces/PastProjectComponent";
 
-export default function PastProjects(props: PastProjectsComponent) {
-  const { imgsrc, alt, title, description, repo, liveDemo } = props;
+export default function PastProjects(props: Partial<PastProjectsComponent>) {
+  const {
+    id,
+    imgsrc,
+    alt,
+    title,
+    description,
+    detailedDescription = undefined,
+    repo,
+    liveDemo,
+  } = props;
 
   return (
-    <section className="w-full bg-white dark:bg-gradient-to-r dark:from-gray-900 dark:to-pink-900">
+    <section className="w-full bg-white dark:bg-gradient-to-r dark:from-slate-900 dark:via-slate-900 dark:to-pink-900">
       <div className="container flex flex-col items-center px-4 py-12 mx-auto xl:flex-row">
         <div className="flex justify-center px-4 xl:w-1/2">
           <Image
@@ -17,9 +27,13 @@ export default function PastProjects(props: PastProjectsComponent) {
         </div>
 
         <div className="flex flex-col items-center mt-6 xl:items-start xl:w-1/2 xl:mt-0">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-800 xl:text-4xl dark:text-white">
-            {title}
-          </h2>
+          <Link href={`/projects/${id}`}>
+            <a>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-800 dark:hover:text-pink-500 xl:text-4xl dark:text-white">
+                {title}
+              </h2>
+            </a>
+          </Link>
 
           <p className="block max-w-2xl mt-4 text-xl text-gray-500 dark:text-gray-300">
             {description}
