@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-import { PastProjectsComponent } from "../../interfaces/PastProjectComponent";
 import { projectList as importedProjectList } from "../../lib/projectObjects";
 import ProjectHero from "../../components/ProjectHero";
 import ProjectFeatures from "../../components/ProjectFeatures";
@@ -8,25 +7,27 @@ export default function Project<NextPage>() {
   const router = useRouter();
   const projectId = router.query.id;
   const projectList = importedProjectList;
-  const project = projectList.filter((project) => {
-    return project.id === projectId;
-  });
-  if (!project.at(0)) {
+  const project = projectList
+    .filter((project) => {
+      return project.id === projectId;
+    })
+    .pop();
+
+  if (!project) {
     return (
-      <div className="w-full flex justify-center text-white ">Loading</div>
+      <div className="w-full flex justify-center text-white">
+        No project found with provided id
+      </div>
     );
   } else {
     const {
-      id,
       title,
       alt,
-      description,
       detailedDescription,
       featuresDescription,
       imgsrc,
-      repo,
       liveDemo,
-    } = project.at(0) as PastProjectsComponent;
+    } = project;
 
     return (
       <div className="w-full flex flex-col">
