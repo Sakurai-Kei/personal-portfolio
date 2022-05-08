@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="w-full items-center dark:bg-gradient-to-r dark:from-gray-900 dark:to-pink-900">
+    <section className="w-full items-center dark:bg-gradient-to-r dark:from-pink-900  dark:to-slate-900">
       <div className="container px-6 py-8 mx-auto">
         <div className="items-center lg:flex">
           <div className="lg:w-1/2">
@@ -8,7 +8,7 @@ export default function Hero() {
               Who I am
             </h2>
 
-            <p className="mt-4 text-gray-500 dark:text-gray-400 lg:max-w-md">
+            <p className="mt-4 text-gray-500 dark:text-gray-300 lg:max-w-md">
               Hi, I am Sakurai Kei , full-stack developer{" "}
               <a
                 className="font-bold text-blue-600 dark:text-blue-400"
@@ -24,17 +24,11 @@ export default function Hero() {
             </p>
 
             <div className="flex items-center mt-6 -mx-2">
-              <a className="mx-2" href="#" aria-label="Linkden">
-                <svg
-                  className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 512 512"
-                >
-                  <path d="M417.2 64H96.8C79.3 64 64 76.6 64 93.9V415c0 17.4 15.3 32.9 32.8 32.9h320.3c17.6 0 30.8-15.6 30.8-32.9V93.9C448 76.6 434.7 64 417.2 64zM183 384h-55V213h55v171zm-25.6-197h-.4c-17.6 0-29-13.1-29-29.5 0-16.7 11.7-29.5 29.7-29.5s29 12.7 29.4 29.5c0 16.4-11.4 29.5-29.7 29.5zM384 384h-55v-93.5c0-22.4-8-37.7-27.9-37.7-15.2 0-24.2 10.3-28.2 20.3-1.5 3.6-1.9 8.5-1.9 13.5V384h-55V213h55v23.8c8-11.4 20.5-27.8 49.6-27.8 36.1 0 63.4 23.8 63.4 75.1V384z" />
-                </svg>
-              </a>
-
-              <a className="mx-2" href="#" aria-label="Github">
+              <a
+                className="mx-2"
+                href="https://github.com/Sakurai-Kei"
+                aria-label="Github"
+              >
                 <svg
                   className="w-5 h-5 text-gray-700 fill-current dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400"
                   xmlns="http://www.w3.org/2000/svg"
@@ -45,18 +39,6 @@ export default function Hero() {
               </a>
             </div>
           </div>
-
-          {/* <div className="mt-8 lg:mt-0 lg:w-1/2">
-            <div className="flex items-center justify-center lg:justify-end">
-              <div className="max-w-lg">
-                <img
-                  className="object-cover object-center w-full h-64 rounded-md shadow"
-                  src="https://images.unsplash.com/photo-1484399172022-72a90b12e3c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>

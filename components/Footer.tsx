@@ -1,14 +1,15 @@
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="dark:bg-gradient-to-t dark:from-slate-900 dark:to-pink-900">
       <div className="container px-6 py-8 mx-auto">
         <div className="text-center">
-          <a
-            href="#"
-            className="text-2xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
-          >
-            Sakurai Kei
-          </a>
+          <Link href={"/about"}>
+            <a className="text-2xl font-bold text-gray-800 dark:text-white hover:text-gray-700 dark:hover:text-gray-300">
+              Sakurai Kei
+            </a>
+          </Link>
 
           <p className="max-w-md mx-auto mt-2 text-gray-500 dark:text-gray-400">
             Check out my Github pages here!
@@ -16,7 +17,10 @@ export default function Footer() {
 
           <div className="flex flex-col mt-4 sm:flex-row sm:items-center sm:justify-center">
             <button className="flex items-center justify-center order-1 w-full px-2 py-2 mt-3 text-sm tracking-wide text-gray-600 capitalize transition-colors duration-200 transform border rounded-md sm:mx-2 dark:border-gray-400 dark:text-gray-300 sm:mt-0 sm:w-auto hover:bg-gray-50 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40">
-              <a className="flex gap-2" href="#">
+              <a
+                className="flex gap-2"
+                href="https://github.com/Sakurai-Kei/personal-portfolio"
+              >
                 <svg
                   width="24"
                   height="24"
