@@ -15,31 +15,30 @@ export default function Project<NextPage>() {
 
   if (!project) {
     return (
-      <div className="w-full flex justify-center text-white">
+      <div className="w-full min-h-screen flex justify-center text-white">
         No project found with provided id
       </div>
     );
-  } else {
-    const {
-      title,
-      alt,
-      detailedDescription,
-      featuresDescription,
-      imgsrc,
-      liveDemo,
-    } = project;
-
-    return (
-      <div className="w-full flex flex-col">
-        <ProjectHero
-          imgsrc={imgsrc}
-          alt={alt}
-          title={title}
-          detailedDescription={detailedDescription}
-          liveDemo={liveDemo}
-        />
-        <ProjectFeatures featuresDescription={featuresDescription} />
-      </div>
-    );
   }
+  const {
+    title,
+    alt,
+    detailedDescription,
+    featuresDescription,
+    imgsrc,
+    liveDemo,
+  } = project;
+
+  return (
+    <div className="w-full min-h-screen flex flex-col">
+      <ProjectHero
+        imgsrc={imgsrc}
+        alt={alt}
+        title={title}
+        detailedDescription={detailedDescription}
+        liveDemo={liveDemo}
+      />
+      <ProjectFeatures featuresDescription={featuresDescription} />
+    </div>
+  );
 }

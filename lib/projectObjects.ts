@@ -52,19 +52,19 @@ const blogAPIProject = Project(
 );
 
 const chatAppProject = Project(
-  "chat-app-project",
-  "Chat App Project",
-  "Chat App Project",
+  "chat-app-with-nextjs",
+  "Chat App With NextJs",
+  "Chat App with NextJs",
   chatApp,
-  "A full-stack real-time chat web app made with React using Google Firebase as back-end. User can use their google accounts to log in and joins the global chat-room",
-  "This project uses ReactJs library and react-router for its' front-end, and Google Firebase for its' back-end. Users may log in using their google account as the app makes use of Google's auth API to check for user's status. Only logged in user may access chat features",
+  "A full-stack chat web app made with NextJs, MongoDB database, iron-session for auth state and bcryptjs for hashing passwords. Now supports file hosting with AWS S3",
+  "A full-stack app made with NextJs. The app features group creation and private chat instances with other user. As this is a prototype app, the app does not check if the provided email is legit. This app does hash user's password with bcryptjs to improve account security. Auth state across the app is possible using iron-session. The web app supports both image and video(mp4) sharing from i.imgur.com domain. Furthermore, the web app supports file hosting(image only) using AWS S3 storage. With it, user can share their pictures with other people and even use it to change their profile picture and group pictures! Do note, however, content of a message is not encrypted and as such, anyone with access to the database can view the content of a message. Data fetching is made with SWR for efficient real-time data fetching. More features to come!",
   [
-    "With ReactJs, the chat-room will be updated real-time seamlessly as the app stays subscribed to the incoming messages",
+    "With React and SWR, the chat-room will be updated real-time seamlessly as the app stays subscribed to the incoming messages",
     responsiveDescription,
-    "The web app is secured by using Google's Auth API, ensuring that some API access can only be used by authorized user",
+    "The web app session is secured by using iron-session, ensuring that some API access can only be used by authorized user",
   ],
-  "https://github.com/Sakurai-Kei/chat-app",
-  "https://snap-chat-app-e9bd6.web.app/"
+  "https://github.com/Sakurai-Kei/chat-app-with-nextjs",
+  "https://chat-app-with-nextjs.netlify.app/"
 );
 
 export { projectList, blogAPIProject, chatAppProject };

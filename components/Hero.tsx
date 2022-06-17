@@ -1,14 +1,26 @@
+import { motion } from "framer-motion";
+
 export default function Hero() {
   return (
     <section className="w-full items-center dark:bg-gradient-to-r dark:from-pink-900  dark:to-slate-900">
       <div className="container px-6 py-8 mx-auto">
         <div className="items-center lg:flex">
           <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-100">
+            <motion.h2
+              initial={{ x: -1000 }}
+              animate={{ x: [-1000, 0] }}
+              transition={{ duration: 1 }}
+              className="text-3xl font-bold text-gray-800 dark:text-gray-100"
+            >
               Who I am
-            </h2>
+            </motion.h2>
 
-            <p className="mt-4 text-gray-500 dark:text-gray-300 lg:max-w-md">
+            <motion.p
+              initial={{ x: -1000 }}
+              animate={{ x: [-1000, 0] }}
+              transition={{ duration: 1.5 }}
+              className="mt-4 text-gray-500 dark:text-gray-300 lg:max-w-md"
+            >
               Hi, I am Sakurai Kei , full-stack developer{" "}
               <a
                 className="font-bold text-blue-600 dark:text-blue-400"
@@ -21,7 +33,7 @@ export default function Hero() {
               using libraries/frameworks such as React, MERN stack and NextJs.
               Furthermore, I have used services such as Google Firebase and
               MongoDB in my projects.
-            </p>
+            </motion.p>
 
             <div className="flex items-center mt-6 -mx-2">
               <a

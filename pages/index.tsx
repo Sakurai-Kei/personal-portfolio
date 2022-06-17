@@ -5,7 +5,7 @@ import { blogAPIProject, chatAppProject } from "../lib/projectObjects";
 
 export default function Home<NextPage>() {
   return (
-    <div className="flex flex-col items-center justify-center dark:bg-gray-800 dark:text-white">
+    <div className="flex flex-col items-center justify-center dark:bg-gray-800 dark:text-white overflow-x-hidden">
       <Hero />
       <Features />
       <PastProjects

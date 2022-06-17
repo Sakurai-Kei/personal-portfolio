@@ -3,7 +3,7 @@ import { blogAPIProject, chatAppProject } from "../lib/projectObjects";
 
 export default function Projects<NextPage>() {
   return (
-    <div className="w-full flex flex-col bg-gradient-to-r from-slate-900 to-pink-900 text-white items-center">
+    <div className="w-full flex flex-col bg-gradient-to-r from-slate-900 to-pink-900 text-white items-center overflow-x-hidden">
       <PastProjects
         id={blogAPIProject.id}
         imgsrc={blogAPIProject.imgsrc}
